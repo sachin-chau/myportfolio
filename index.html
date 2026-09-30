@@ -4,126 +4,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>my portfolio</title>
 </head>
 
 <body>
     <header>
-        <img src="images/logo.png" alt="logo" width="100" height="100">
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#aboutme">about me</a></li>
-                <li><a href="#myproject">my project</a></li>
-                <li><a href="#myskills">my skills</a></li>
-                <li><a href="#education">Education</a></li>
-            </ul>
-        </nav>
-        <form>
-            <input type="text" placeholder="search">
-            <button type="submit">search</button>
-        </form>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo" width="100" height="100">
+            </div>
+            <div class="nav-bar">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#aboutme">about me</a></li>
+                        <li><a href="#myproject">my project</a></li>
+                        <li><a href="#myskills">my skills</a></li>
+                        <li><a href="#education">Education</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="search-bar">
+                <form>
+                    <input type="text" placeholder="search">
+                    <button type="submit">search</button>
+            </div>
+            </form>
     </header>
+    </div>
     <main>
         <section id="aboutme">
-            <h2>About me</h2>
-            <p>
-                My name is Sachin Chaudhary, and I am a hardworking, responsible, and motivated
-                student with a strong interest in technology and computer science. I enjoy
-                learning new things, solving problems, and improving my skills through
-                practical experience. I consider communication, leadership, adaptability,
-                and teamwork to be some of my strengths. I am always willing to take on new
-                challenges and learn from my experiences. My goal is to continue developing
-                my knowledge and skills so that I can build a successful career in the field
-                of technology and contribute positively to the people and organizations around me.
-            </p>
+            <div class="about-container">
+                <div class="about-text">
+
+
+                    <h2>About Me</h2>
+                    <p>
+                        My name is Sachin Chaudhary, and I am a hardworking, responsible, and motivated
+                        student with a strong interest in technology and computer science. I enjoy
+                        learning new things, solving problems, and improving my skills through
+                        practical experience. I consider communication, leadership, adaptability,
+                        and teamwork to be some of my strengths. I am always willing to take on new
+                        challenges and learn from my experiences. My goal is to continue developing
+                        my knowledge and skills so that I can build a successful career in the field
+                        of technology and contribute positively to the people and organizations around me.
+                    </p>
+                </div>
+                <img src="images/profile.png" alt="profile">
+            </div>
         </section>
-        <img src="images/profile.png" alt="profile" width="100" height="100">
         <section id="myproject">
-            <h1> My Project</h1>
-            <article>
-                <h2>E-commerce website</h2>
-                <p>My e-commerce website project is an online shopping platform designed
-                    to make buying products simple, fast, and convenient. The website allows
-                    users to browse different products, view product details and prices, add
-                    items to a shopping cart, and place orders. It is designed with a clean and
-                    user-friendly interface so customers can easily find what they need.
-                    The project also focuses on providing a smooth shopping experience across different devices.</p>
-            </article>
-            <article>
-                <h2>Movie recommendation system</h2>
-                <p>My movie recommendation system project is designed to suggest movies to users based on their
-                    preferences and viewing history. The system uses collaborative filtering and content-based
-                    filtering techniques to provide personalized recommendations. It also includes features such
-                    as movie search, ratings, and reviews to enhance the user experience.</p>
-            </article>
-            <article>
-                <h2>Blog website</h2>
-                <p>My blog website project is a platform that allows users to create and share their own content
-                    with a wider audience. The website is designed to be user-friendly, with a simple interface
-                    that makes it easy for users to create and publish their own blog posts. Users can also browse
-                    and read other users' posts, leave comments, and engage in discussions. The project focuses
-                    on providing a seamless experience for both content creators and readers, with features such
-                    as search functionality, categories, and tags to help users find relevant content.</p>
-            </article>
+            <div class="project-container">
+                <h1> My Project</h1>
+                <article>
+                    <h2>E-commerce website</h2>
+                    <p>My e-commerce website project is an online shopping platform designed
+                        to make buying products simple, fast, and convenient. The website allows
+                        users to browse different products, view product details and prices, add
+                        items to a shopping cart, and place orders. It is designed with a clean and
+                        user-friendly interface so customers can easily find what they need.
+                        The project also focuses on providing a smooth shopping experience across different devices.</p>
+                    <a href="https://github.com" target="_blank">view project</a>
+                </article>
+                <article>
+                    <h2>Movie recommendation system</h2>
+                    <p>My movie recommendation system project is designed to suggest movies to users based on their
+                        preferences and viewing history. The system uses collaborative filtering and content-based
+                        filtering techniques to provide personalized recommendations. It also includes features such
+                        as movie search, ratings, and reviews to enhance the user experience.</p>
+                    <a href="https://github.com" target="_blank">view project</a>
+
+                </article>
+                <article>
+                    <h2>Blog website</h2>
+                    <p>My blog website project is a platform that allows users to create and share their own content
+                        with a wider audience. The website is designed to be user-friendly, with a simple interface
+                        that makes it easy for users to create and publish their own blog posts. Users can also browse
+                        and read other users' posts, leave comments, and engage in discussions. The project focuses
+                        on providing a seamless experience for both content creators and readers, with features such
+                        as search functionality, categories, and tags to help users find relevant content.</p>
+                    <a href="https://github.com" target="_blank">view project</a>
+                </article>
+            </div>
         </section>
         <section id="myskills">
-            <h2> My Skills</h2>
-            <dl>
-                <dt>Programming Language</dt>
-                <dd> java, python,c,c++</dd>
-                <dt>Database</dt>
-                <dd>mysql, mongodb</dd>
-                <dt>Tools</dt>
-                <dd>git, github, vscode</dd>
-                <dt>Framework</dt>
-                <dd>Django, Flask</dd>
-            </dl>
+            <div class="skills-container">
+                <h2> My Skills</h2>
+                <dl>
+                    <dt>Programming Language</dt>
+                    <dd> java, python,c,c++</dd>
+                    <dt>Database</dt>
+                    <dd>mysql, mongodb</dd>
+                    <dt>Tools</dt>
+                    <dd>git, github, vscode</dd>
+                    <dt>Framework</dt>
+                    <dd>Django, Flask</dd>
+                </dl>
         </section>
         <section id="education">
-            <h2>Education</h2>
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>S.N</th>
-                        <th>level</th>
-                        <th>completion date</th>
-                        <th>institution</th>
-                        <th>grade</th>
-                        <th>Gpa</th>
-                    </tr>
+            <div class="education-container">
+                <h2>Education</h2>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>S.N</th>
+                            <th>level</th>
+                            <th>completion date</th>
+                            <th>institution</th>
+                            <th>grade</th>
+                            <th>Gpa</th>
+                        </tr>
 
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>slc</td>
-                        <td>2022</td>
-                        <td>sewa sadan school</td>
-                        <td>A</td>
-                        <td>3.9</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>+2</td>
-                        <td>2024</td>
-                        <td>trinity international college</td>
-                        <td>A</td>
-                        <td>3.5</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Under graduate</td>
-                        <td>2026</td>
-                        <td>model institute of college</td>
-                        <td>ongoing</td>
-                        <td>ongoing</td>
-                    </tr>
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>slc</td>
+                            <td>2022</td>
+                            <td>sewa sadan school</td>
+                            <td>A</td>
+                            <td>3.9</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>+2</td>
+                            <td>2024</td>
+                            <td>trinity international college</td>
+                            <td>A</td>
+                            <td>3.5</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Under graduate</td>
+                            <td>2026</td>
+                            <td>model institute of college</td>
+                            <td>ongoing</td>
+                            <td>ongoing</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
     </main>
     <section id="Contact">
+        </div class="contact-container">
         <h2>contact information</h2>
         <form>
             <label for="name">Name:</label><br>
@@ -135,8 +160,10 @@
             <button type="submit">send</button>
 
         </form>
+        </div>
     </section>
     <footer>
+        
         <h2>Find Me On</h2>
         <a href="https://www.google.com" target="_blank">
             <img src="images/google.png" alt="website" width="100" height="100">
