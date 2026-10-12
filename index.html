@@ -6,13 +6,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="scripts.js" defer></script>
     <title>Sachin Chaudhary | Portfolio</title>
 </head>
 
 <body>
 
     <header>
-
         <div class="header-container">
 
             <div class="logo">
@@ -30,6 +30,7 @@
                         <li><a href="#">Home</a></li>
                         <li><a href="#aboutme">About Me</a></li>
                         <li><a href="#myproject">My Projects</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
                         <li><a href="#myskills">My Skills</a></li>
                         <li><a href="#education">Education</a></li>
                         <li><a href="#contact">Contact</a></li>
@@ -38,29 +39,22 @@
             </div>
 
             <div class="search-bar">
-                <form>
-                    <input type="text" placeholder="Search">
+                <form action="#gallery" method="get">
+                    <input type="search" name="search" placeholder="Search">
                     <button type="submit">Search</button>
                 </form>
             </div>
 
         </div>
-
     </header>
-
 
     <main>
 
-        <!-- About Me -->
-
         <section id="aboutme">
-
             <div class="about-container">
 
                 <div class="about-text">
-
                     <p class="section-label">WELCOME TO MY PORTFOLIO</p>
-
                     <h2>About Me</h2>
 
                     <p>
@@ -76,223 +70,183 @@
                         teamwork to be some of my strengths. I am always willing
                         to take on new challenges and learn from my experiences.
                         My goal is to continue developing my knowledge and skills
-                        so that I can build a successful career in the field of
-                        technology.
+                        so that I can build a successful career in technology.
                     </p>
-
                 </div>
 
                 <div class="profile-image">
-
-                    <img src="images/profile.png"
-                         alt="Sachin Chaudhary Profile Picture">
-
+                    <img src="images/profile.png" alt="Sachin Chaudhary Profile Picture">
                 </div>
 
             </div>
-
         </section>
 
-
-        <!-- Projects -->
-
         <section id="myproject">
-
             <div class="project-container">
 
                 <div class="section-title">
                     <p>MY RECENT WORK</p>
-                    <h1>My Projects</h1>
+                    <h2>My Projects</h2>
                 </div>
-
 
                 <div class="project-grid">
 
                     <article class="project-card">
-
                         <span class="project-number">01</span>
-
-                        <h2>E-commerce Website</h2>
+                        <h3>E-commerce Website</h3>
 
                         <p>
-                            My e-commerce website project is an online shopping
-                            platform designed to make buying products simple,
-                            fast, and convenient. The website allows users to
-                            browse different products, view product details and
-                            prices, add items to a shopping cart, and place
-                            orders.
+                            My e-commerce website is an online shopping platform
+                            designed to make buying products simple, fast, and
+                            convenient. Users can browse products, view prices,
+                            add items to a shopping cart, and place orders.
                         </p>
 
-                        <a href="https://github.com"
-                           target="_blank">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
                             View Project →
                         </a>
-
                     </article>
 
-
                     <article class="project-card">
-
                         <span class="project-number">02</span>
-
-                        <h2>Movie Recommendation System</h2>
+                        <h3>Movie Recommendation System</h3>
 
                         <p>
-                            My movie recommendation system is designed to suggest
-                            movies to users based on their preferences and viewing
-                            history. The system can use collaborative filtering
-                            and content-based filtering to provide personalized
-                            recommendations. It can also include movie search,
+                            My movie recommendation system suggests movies based
+                            on users' preferences and viewing history. It can
+                            include personalized recommendations, movie searches,
                             ratings, and reviews.
                         </p>
 
-                        <a href="https://github.com"
-                           target="_blank">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
                             View Project →
                         </a>
-
                     </article>
 
-
                     <article class="project-card">
-
                         <span class="project-number">03</span>
-
-                        <h2>Blog Website</h2>
+                        <h3>Blog Website</h3>
 
                         <p>
-                            My blog website is a platform that allows users to
-                            create and share their own content. Users can create
-                            and publish blog posts, read other posts, leave
-                            comments, and participate in discussions. The website
-                            can also include search functionality, categories,
+                            My blog website allows users to create and share
+                            content. Users can publish blog posts, read articles,
+                            leave comments, and explore content using categories
                             and tags.
                         </p>
 
-                        <a href="https://github.com"
-                           target="_blank">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
                             View Project →
                         </a>
-
                     </article>
 
                 </div>
-
             </div>
-
         </section>
 
+        <section id="gallery">
+            <div class="gallery-container">
 
-        <!-- Skills -->
+                <div class="section-title">
+                    <p>MY FAVORITE MOMENTS</p>
+                    <h2>My Gallery</h2>
+                    <p class="gallery-description">
+                        A collection of my favorite pictures and memories.
+                    </p>
+                </div>
+
+                <div class="slider">
+
+                    <div class="slider-track">
+
+                        <div class="slide">
+                            <img src="images/yolo.png" alt="GitHub logo">
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/yo.png" alt="Profile picture">
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/ro.png" alt="Portfolio logo">
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/hello.png" alt="WeHeart image">
+                        </div>
+
+                        <div class="slide">
+                            <img src="images/fi.png" alt="WhatsApp logo">
+                        </div>
+                    </div>
+
+                    <button class="slider-btn prev" type="button" aria-label="Previous image">
+                        &#10094;
+                    </button>
+
+                    <button class="slider-btn next" type="button" aria-label="Next image">
+                        &#10095;
+                    </button>
+
+                    <div class="slider-dots"></div>
+                </div>
+            </div>
+        </section>
 
         <section id="myskills">
-
             <div class="skills-container">
 
                 <div class="section-title">
-
                     <p>WHAT I KNOW</p>
-
                     <h2>My Skills</h2>
-
                 </div>
-
 
                 <div class="skills-grid">
 
                     <div class="skill-card">
-
                         <h3>Programming Languages</h3>
-
-                        <p>
-                            Java, Python, C, C++
-                        </p>
-
+                        <p>Java, Python, C, C++</p>
                     </div>
 
-
                     <div class="skill-card">
-
                         <h3>Database</h3>
-
-                        <p>
-                            MySQL, MongoDB
-                        </p>
-
+                        <p>MySQL, MongoDB</p>
                     </div>
 
-
                     <div class="skill-card">
-
                         <h3>Tools</h3>
-
-                        <p>
-                            Git, GitHub, VS Code
-                        </p>
-
+                        <p>Git, GitHub, VS Code</p>
                     </div>
 
-
                     <div class="skill-card">
-
                         <h3>Frameworks</h3>
-
-                        <p>
-                            Django, Flask
-                        </p>
-
+                        <p>Django, Flask</p>
                     </div>
 
-
                     <div class="skill-card">
-
                         <h3>Web Development</h3>
-
-                        <p>
-                            HTML, CSS, Basic JavaScript
-                        </p>
-
+                        <p>HTML, CSS, Basic JavaScript</p>
                     </div>
 
-
                     <div class="skill-card">
-
                         <h3>Other Skills</h3>
-
-                        <p>
-                            Problem Solving, Communication, Teamwork
-                        </p>
-
+                        <p>Problem Solving, Communication, Teamwork</p>
                     </div>
 
                 </div>
-
             </div>
-
         </section>
 
-
-        <!-- Education -->
-
         <section id="education">
-
             <div class="education-container">
 
                 <div class="section-title">
-
                     <p>MY ACADEMIC JOURNEY</p>
-
                     <h2>Education</h2>
-
                 </div>
 
-
                 <div class="table-container">
-
                     <table>
-
                         <thead>
-
                             <tr>
                                 <th>S.N</th>
                                 <th>Level</th>
@@ -301,12 +255,9 @@
                                 <th>Grade</th>
                                 <th>GPA</th>
                             </tr>
-
                         </thead>
 
-
                         <tbody>
-
                             <tr>
                                 <td>1</td>
                                 <td>SLC / SEE</td>
@@ -333,131 +284,72 @@
                                 <td>Ongoing</td>
                                 <td>Ongoing</td>
                             </tr>
-
                         </tbody>
-
                     </table>
-
                 </div>
-
             </div>
-
         </section>
 
-
-        <!-- Contact -->
-
         <section id="contact">
-
             <div class="contact-container">
 
                 <div class="contact-info">
-
                     <p>GET IN TOUCH</p>
-
                     <h2>Contact Me</h2>
 
                     <p>
                         Have a question or want to work together?
-                        Send me a message and I will get back to you.
+                        Send me a message.
                     </p>
-
                 </div>
 
-
-                <form class="contact-form">
+                <form class="contact-form" id="contactForm">
 
                     <label for="name">Name:</label>
-
-                    <input type="text"
-                           id="name"
-                           placeholder="Enter your name"
-                           required>
-
+                    <input type="text" id="name" name="name"
+                           placeholder="Enter your name" required>
 
                     <label for="email">Email:</label>
-
-                    <input type="email"
-                           id="email"
-                           placeholder="Enter your email"
-                           required>
-
+                    <input type="email" id="email" name="email"
+                           placeholder="Enter your email" required>
 
                     <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="6"
+                              placeholder="Write your message..." required></textarea>
 
-                    <textarea id="message"
-                              rows="6"
-                              placeholder="Write your message..."
-                              required></textarea>
+                    <button type="submit">Send Message</button>
 
-
-                    <button type="submit">
-                        Send Message
-                    </button>
+                    <p id="form-status" role="status" aria-live="polite"></p>
 
                 </form>
-
             </div>
-
         </section>
 
     </main>
 
-
-    <!-- Footer -->
-
     <footer>
-
         <h2>Find Me On</h2>
 
         <div class="social-links">
-
-            <a href="https://www.github.com"
-               target="_blank">
-
-                <img src="images/git.png"
-                     alt="GitHub">
-
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/git.png" alt="GitHub">
             </a>
 
-
-            <a href="https://www.whatsapp.com"
-               target="_blank">
-
-                <img src="images/whatsapp.png"
-                     alt="WhatsApp">
-
+            <a href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/whatsapp.png" alt="WhatsApp">
             </a>
 
-
-            <a href="https://www.google.com"
-               target="_blank">
-
-                <img src="images/google.png"
-                     alt="Google">
-
-
+            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/google.png" alt="Google">
             </a>
 
-
-            <a href="https://www.weheart.com"
-               target="_blank">
-
-                <img src="images/we.png"
-                     alt="WeHeart">
-
+            <a href="https://www.weheart.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/we.png" alt="WeHeart">
             </a>
-
         </div>
 
-
-        <p>
-            &copy; 2026 Sachin Chaudhary. All rights reserved.
-        </p>
-
+        <p>&copy; 2026 Sachin Chaudhary. All rights reserved.</p>
     </footer>
 
 </body>
-
 </html>
-```
